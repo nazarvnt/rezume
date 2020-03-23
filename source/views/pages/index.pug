@@ -1,0 +1,23 @@
+extends ../layouts/simple.layout.pug
+block variables
+  -
+    var pageTitle = "homepage"
+mixin section(params)
+  .section
+    .section--title #{params.title}
+      span #{params.title}
+    .section--content #{params.content}
+block content
+  .cv-header
+    .cv-photo
+      img(src="img/ava.jpg" alt="photo of developer" )
+    .cv-title
+      .cv-name Назар
+      .cv-second-name Венгренюк
+      .cv-title-position no stac developer - Vue
+  -
+    var content = `
+      Івано - Франківськ 
+    `
+  
+  +section({title: "contacts", content})

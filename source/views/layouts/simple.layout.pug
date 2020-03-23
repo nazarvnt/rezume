@@ -1,0 +1,11 @@
+include ../components/settings.pug
+block variables
+doctype html
+html(lang="uk")
+  head
+    title #{siteName} | #{pageTitle}
+    meta(charset="utf-8") 
+    link(rel="stylesheet" href="./css/main.css")
+  body
+    include ../components/navigation.pug
+    block content
